@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>
+      Friends
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <h1>Active Menu:<input  color="red"  type="text" disabled=true [value]="menuNumber" /></h1>
+    <button ion-button color="danger" block  (click)="menu1Click()">Make Menu1 Active</button>
+    <button ion-button color="primary" block  (click)="menu2Click()">Make Menu2 Active</button>
+    <button ion-button color="secondary" block  (click)="toggleClick()">Toggle Menu</button>
+</ion-content>

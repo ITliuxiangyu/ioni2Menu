@@ -1,0 +1,47 @@
+
+<ion-content padding>
+
+    <!--menu: type:reveal overlay push-->
+    <ion-menu [content]="mycontent" type="overlay" side="left" id="first">
+        <ion-header>
+            <ion-navbar color="danger">
+                
+                <ion-title left>
+                Menu1
+                </ion-title>
+            </ion-navbar>
+        </ion-header>
+        <ion-content>
+            <ion-list>
+                <p>some menu content, could be list item</p>
+                <ion-item menuClose detail-none>Close Menu</ion-item>
+                
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+
+    <ion-menu [content]="mycontent" type="overlay" side="left" id="second">
+        <ion-header>
+            <ion-navbar color="secondary">
+                
+                <ion-title left>
+                Menu2
+                </ion-title>
+            </ion-navbar>
+        </ion-header>
+        <ion-content>
+            <ion-list>
+                <p>some menu content, could be list item</p>
+                <ion-item menuClose detail-none>Close Menu</ion-item>
+                
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+
+
+    <ion-nav #mycontent [root]="rootPage"></ion-nav>
+
+
+</ion-content>
+
+
